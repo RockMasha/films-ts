@@ -1,0 +1,25 @@
+@import url("./reset.css");
+@import url("./blocks/loaders/contentLoadLoader.css");
+@import url("./blocks/header/header.css");
+@import url("./blocks/popular/popular.css");
+@import url("./blocks/most-popular/most-popular.css");
+@import url("./blocks/card/card.css");
+@import url("./blocks/rating/rating.css");
+
+body {
+  background-color: #ddd;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body[lock]{
+  overflow: hidden;
+}
+main {
+  padding-top: 125px;
+}
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+.title {
+  font-size: 60px;
+}

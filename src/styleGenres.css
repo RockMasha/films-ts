@@ -1,0 +1,24 @@
+@import url("./reset.css");
+@import url("./blocks/loaders/contentLoadLoader.css");
+@import url("./blocks/header/header.css");
+@import url("./blocks/genres/genres.css");
+@import url("./blocks/card/card.css");
+@import url("./blocks/rating/rating.css");
+@import url("./blocks/loaders/btnMoreLoader.css");
+@import url("./blocks/loaders/genresCardLoader.css");
+
+body {
+  background-color: #ddd;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body[lock] {
+  overflow: hidden;
+}
+main {
+  min-height: 100%;
+  padding-top: 85px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}

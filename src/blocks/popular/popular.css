@@ -1,0 +1,40 @@
+.popular {
+  position: relative;
+  margin-bottom: 100px;
+}
+.popular-main-title[hidden] {
+  display: none;
+  overflow: hidden;
+}
+.popular-title {
+  margin-bottom: 70px;
+}
+.popular .swiper {
+  width: 1375px;
+  padding: 50px 120px;
+}
+
+.swiper > .popular-slider > .swiper-slide {
+  max-width: 250px;
+}
+.swiper > .swiper-button-next::after,
+.swiper > .swiper-button-prev::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 500px;
+  color: rgb(86, 91, 112);
+  font-size: 75px;
+  position: absolute;
+  z-index: 1000;
+  background-color: #ddd;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.swiper > .swiper-button-prev::after {
+  left: -50px;
+}
+.swiper > .swiper-button-next::after {
+  right: -50px;
+}

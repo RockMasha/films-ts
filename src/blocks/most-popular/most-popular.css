@@ -1,0 +1,35 @@
+.most-popular {
+  padding-bottom: 50px;
+}
+.most-popular__title {
+  margin-bottom: 60px;
+}
+.most-popular__main-info {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.most-popular__more-main-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.most-popular__film-name {
+  font-size: 45px;
+}
+.most-popular__more-main-info > .most-popular-rating {
+  align-items: baseline;
+  font-size: 45px;
+}
+.most-popular-rating > .most-popular-rating__value {
+  font-size: 35px;
+}
+.most-popular__img {
+  width: 350px;
+  height: 450px;
+  object-fit: fill;
+}
+.most-popular__text {
+  max-width: 650px;
+  font-size: 33px;
+}
