@@ -1,11 +1,9 @@
-import { fetchListGenres } from "../service/api";
 import { Genres } from "../universal/types/Genres";
-import { ListGenresData } from "../universal/types/ListGenresData";
+import { getGenres } from "./getGenres";
 import { root } from "./rootOfGenresPage";
 
 export async function setListOfGenresInPage() {
-  const genres: ListGenresData = await fetchListGenres();
-  let listOfGenres: Genres[] = genres.genres;
+  let listOfGenres: Genres[] = await getGenres();
 
   const listEl: string[] = listOfGenres.map((item: Genres) =>
     createItemOfGenres(item)

@@ -39,8 +39,8 @@ function changeActiveItem(currentEl: Elem) {
   lastActiveEl = currentEl;
 }
 
-type GenreId = string | undefined | null;
-function getGenresId(genresEl: Elem): Id {
+type GenreId = Id | undefined;
+function getGenresId(genresEl: Elem): Id | "error" {
   if (genresEl) {
     const genresId: GenreId = genresEl.dataset.genresId;
     return genresId !== undefined ? genresId : null;

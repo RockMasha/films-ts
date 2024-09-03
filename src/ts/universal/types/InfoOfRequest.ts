@@ -1,4 +1,6 @@
+import { Id } from "./Id";
+
 export interface InfoOfRequest {
-  genreId?: string | null;
+  genreId?: Id;
   page?: number;
 }
